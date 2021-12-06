@@ -22,7 +22,54 @@
 </head>
 <style>
 
-
+  @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+  body {
+      background: #fff;
+      font-family: "Roboto", sans-serif;
+  }
+   
+  .main-content {
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+   
+  .flex-center {
+      align-items: center;
+  }
+  .accordion-button{
+      margin-bottom: 10px;
+  }
+  .accordion-body {
+      margin-top: 15px;
+      padding: 25px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+  }
+   
+  .circle-icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #2b4eff;
+      border: 5px solid #b2bfff;
+      color: #fff;
+      margin-left: -20px;
+      margin-right: 10px;
+      transform: scale(1.2);
+  }
+  .accordion-item{
+      border: 0px!important;
+  }
+  .accordion-button:not(.collapsed){
+      border: 0px!important;
+      color: #0c63e4;
+      background-color: #ffffff;
+      box-shadow: inset 0 0px 0 rgb(0 0 0 / 13%);
 </style>
 <body>
   <!--==========================
@@ -385,6 +432,127 @@
         </center>
       </div>
     </section>
+<!--  -->
+
+    <section class="main-content">
+      <div class="container">
+        <h1 class="text-center text-uppercase mb-5">Frequently Asked Questions</h1>
+        <br>
+        <br>
+        <div class="row flex-center">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span>Is the event really only for MISTians only? I mean, I got this friend of mine in ‘X’ university, can’t he/she be my teammate??</span> </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> <strong>Yes,</strong>   this time MISTians only. No, he or she can’t be your teammate. Sorry! </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span>I got this friend of mine from another department. Can I form a team with him/her?</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> <strong>Yes,</strong> you can.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span>Can I make the team with seniors/juniors?</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> <strong>Yes,</strong> You can make the team with anyone from MIST.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree"> 
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span>Do I have to pay any participation fees for this event?</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> <strong>Yes,</strong> The registration fees 100/- per team.</div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree"> 
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span> Is the registration fee of 100/- per team or per member?</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> <strong> Per team ,/-.</strong> registration fee is 100.</div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree"> 
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span>How will I pay the fees??</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> You can pay the fees both online & offline. The online procedure is via Bkash & Nagad and for offline procedure, we set up a booth in front of MIST Cafeteria.</div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree"> 
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span>Can I participate in the event individually?</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> <strong>No,</strong> Minimum 2 and maximum 4 members need to be in the team.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree"> 
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span> How many teams will go to the 2nd round?</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">  Top 8 teams will compete in 2nd round</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree"> 
+                    <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                  <span>Is the event conducting in online?</span> </button>
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> The event wil be conducting both online & offline. The boot-camp session and the 1st round wiil be held o online and the 2nd or final round will be held offline.</div>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--==========================
       Venue Section
     ============================-->
@@ -523,5 +691,8 @@
   <script src="js/main.js"></script>
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=478293783459559&autoLogAppEvents=1" nonce="0h2V8ays"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
